@@ -1,0 +1,29 @@
+[role=button]
+    background: rgba($accent,0.5)
+    color: white
+    border: 2px solid white
+    border-radius: 8px
+    padding: 8px 16px
+    text-decoration: none
+    transition: background 0.5s ease 
+    text-align: center
+    position: relative
+    overflow: visible
+    font-size: 1rem
+    &:hover
+        background: rgba(255,255,255,0.2)
+    &.raised
+        background: rgba($accent,0.5)
+        font-size: 1.2rem
+        &:after
+            content: ""
+            width: 100%
+            height: 100%
+            position: absolute
+            border-radius: 8px
+            top: 0
+            bottom: 0
+            left: 0
+            background: rgba(0,0,0,0.1)
+            transform: rotate(-10deg)
+
