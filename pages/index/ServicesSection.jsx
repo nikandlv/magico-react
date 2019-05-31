@@ -91,7 +91,7 @@ export default function ServicesSection() {
                 {
                     services.map((service,key)=> {
                         return (
-                            <Col xs={12} md={4} lg={3} key={key}>
+                            <Col xs={12} sm={6} md={4} lg={3} key={key}>
                                 {renderService(service)}
                             </Col>
                         )
