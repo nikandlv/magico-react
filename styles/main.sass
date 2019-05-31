@@ -126,6 +126,11 @@ nav.top-nav
         background-image: url('/static/img/2.jpg')
     &.b-3
         background-image: url('/static/img/3.jpg')
+    &.match-content
+        height: 100%
+        width: 100%
+        top: 0
+        left: 0
 .large-section
     position: absolute
     width: 100%
@@ -136,9 +141,16 @@ nav.top-nav
         background: rgba(115, 0, 255, 0.2)
     &.red
         background: rgba(255, 0, 0, 0.2)
+    &.green
+        background: rgba(0, 255, 107, 0.2)
+    &.yellow
+        background: rgba(255, 205, 0, 0.2)
+    &.light-green
+        background: rgba(155, 255, 72, 0.2)
 .full-section
-    max-height: 100vh
     min-height: 100vh
+    height: auto
+    position: relative
 @keyframes arrow-animation
     0%
         transform: translateY(0)
@@ -167,3 +179,138 @@ nav.top-nav
     margin: 0 auto
     justify-content: center
     flex-direction: column
+.section-content
+    position: relative
+.gallery-image-container
+    position: relative
+    padding: 10px
+    & img
+        max-height: 70vh
+        z-index: 1120
+        position: relative
+        width: auto
+        border-radius: 20px
+        transition: all 0.5s 
+    & div
+        position: relative
+        overflow: hidden
+        display: inline-flex
+        border-radius: 20px
+        & .title
+            transition: opacity 0.4s
+            z-index: 1125
+            position: absolute
+            font-size: 1.7rem
+            color: white
+            top: 20%
+            left: 0
+            display: block
+            margin: 0 auto
+            right: 0
+            text-align: center
+            opacity: 0
+        & .divider
+            transition: opacity 0.4s
+            z-index: 1125
+            position: absolute
+            font-size: 1.7rem
+            background: rgba(255,255,255,0.3)
+            top: 35%
+            left: 0
+            display: block
+            width: 50%
+            margin: 0 auto
+            right: 0
+            text-align: center
+            opacity: 0
+            height: 2px
+        & .description
+            transition: opacity 0.4s
+            z-index: 1125
+            color: white
+            position: absolute
+            top: 50%
+            left: 0
+            display: block
+            margin: 0 auto
+            background: rgba(0,0,0,0.2)
+            right: 0
+            text-align: center
+            opacity: 0
+        &:hover,&:active
+            -webkit-box-shadow: 0px 0px 23px -6px rgba(255,255,255,1)
+            -moz-box-shadow: 0px 0px 23px -6px rgba(255,255,255,1)
+            box-shadow: 0px 0px 23px -6px rgba(255,255,255,1)
+            & .title,.description,.divider
+                opacity: 1
+            &:after
+                transition: background 0.4s
+                background: rgba(255,255,255,0.5)
+            &.dark:after
+                transition: background 0.4s
+                background: rgba(0,0,0,0.5)
+        &:after
+            transition: background 0.4s
+            content: ""
+            z-index: 1120
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(255,255,255,0)    
+.gallery-title
+    position: relative
+    z-index: 1120
+    color: white
+    display: inline-block
+    text-align: center
+    font-size: 2rem
+    width: 100%
+.section-divider
+    height: 3px
+    background: rgba(255,255,255,0.4)
+    margin-bottom: 40px
+    border-radius: 16px
+.service
+    z-index: 1120
+    position: relative
+    margin: 35px
+    cursor: pointer
+    &:hover
+        &:before
+            transition: border-color 400ms
+            border: 2px solid rgba(255,255,255,0.7)
+    &:before
+        transition: border-color 400ms
+        content: ""
+        height: 150px
+        width: 150px
+        transform: rotate(45deg)
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: 0 auto
+        border: 2px solid rgba(255,255,255,0.2)
+    & .icon
+        color: white
+        font-size: 3rem
+        cursor: pointer
+        border: 2px solid white
+        margin-top: 64px
+        z-index: 1200
+        color: white
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        display: flex
+        align-items: center
+        margin: 0 auto
+        justify-content: center
+        flex-direction: column
+    & p
+        text-align: center
+        font-size: 1.4rem
+        color: rgba(0,0,0,0.7)

@@ -1,0 +1,80 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 20/03/2019 08:16
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("/static/icon/Flaticon.eot");
+  src: url("/static/icon/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("/static/icon/Flaticon.woff2") format("woff2"),
+       url("/static/icon/Flaticon.woff") format("woff"),
+       url("/static/icon/Flaticon.ttf") format("truetype"),
+       url("/static/icon/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("/static/icon/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .coffee-bag:before { content: "\f100"; }
+.coffee-bean:before { content: "\f101"; }
+.coffee-bean-1:before { content: "\f102"; }
+.coffee-maker:before { content: "\f103"; }
+.coffee-machine:before { content: "\f104"; }
+.coffee-machine-1:before { content: "\f105"; }
+.coffee-cup:before { content: "\f106"; }
+.coffee-cup-1:before { content: "\f107"; }
+.coffee-cup-2:before { content: "\f108"; }
+.coffee-cup-3:before { content: "\f109"; }
+.coffee-cup-4:before { content: "\f10a"; }
+.coffee-grinder:before { content: "\f10b"; }
+.coffee-cup-5:before { content: "\f10c"; }
+.coffee-pot:before { content: "\f10d"; }
+.coffee-pot-1:before { content: "\f10e"; }
+.french-press:before { content: "\f10f"; }
+.coffee-cup-6:before { content: "\f110"; }
+.coffee-cup-7:before { content: "\f111"; }
+.coffee-cup-8:before { content: "\f112"; }
+.tea-cup:before { content: "\f113"; }
+    
+    $font-coffee-bag: "\f100";
+    $font-coffee-bean: "\f101";
+    $font-coffee-bean-1: "\f102";
+    $font-coffee-maker: "\f103";
+    $font-coffee-machine: "\f104";
+    $font-coffee-machine-1: "\f105";
+    $font-coffee-cup: "\f106";
+    $font-coffee-cup-1: "\f107";
+    $font-coffee-cup-2: "\f108";
+    $font-coffee-cup-3: "\f109";
+    $font-coffee-cup-4: "\f10a";
+    $font-coffee-grinder: "\f10b";
+    $font-coffee-cup-5: "\f10c";
+    $font-coffee-pot: "\f10d";
+    $font-coffee-pot-1: "\f10e";
+    $font-french-press: "\f10f";
+    $font-coffee-cup-6: "\f110";
+    $font-coffee-cup-7: "\f111";
+    $font-coffee-cup-8: "\f112";
+    $font-tea-cup: "\f113";
