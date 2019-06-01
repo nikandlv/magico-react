@@ -64,6 +64,7 @@ export default function GallerySection() {
                         })
                     }
                 </Row>
+                <div className="gutter small"/>
             </Container>
           </div>
         </section>

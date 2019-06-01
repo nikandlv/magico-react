@@ -1,9 +1,7 @@
-import Link from 'next/link'
 import Wrapper from '../components/Wrapper';
 import Header from '../components/Header';
 import MainHeaderSection from './index/MainHeaderSection';
 import GallerySection from './index/GallerySection';
-import ServicesSection from './index/ServicesSection';
 
 function Index() {
     return (
@@ -11,7 +9,6 @@ function Index() {
         <Header/>
         <MainHeaderSection />
         <GallerySection/>
-        <ServicesSection/>
       </Wrapper>
     )
 }
