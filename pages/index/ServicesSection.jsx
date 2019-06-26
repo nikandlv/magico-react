@@ -10,75 +10,43 @@ function renderService(item) {
 }
 let services = [
     {
-        name:"Fresh milk",
+        name:"Milky",
         icon:"coffee-bag"
     },
     {
-        name:"Test",
+        name:"Fresh",
         icon:"coffee-bean"
     },
     {
-        name:"Test",
+        name:"Beans",
         icon:"coffee-bean-1"
     },
     {
-        name:"Test",
+        name:"Homebrew",
         icon:"coffee-maker"
     },
     {
-        name:"Test",
+        name:"Coffee Maker",
         icon:"coffee-machine"
     },
     {
-        name:"Test",
+        name:"Gifts",
         icon:"coffee-machine-1"
     },
     {
-        name:"Test",
+        name:"Hot tea",
         icon:"coffee-cup"
     },
     {
-        name:"Test",
+        name:"Free test",
         icon:"coffee-cup-1"
-    },
-    {
-        name:"Test",
-        icon:"coffee-cup-2"
-    },
-    {
-        name:"Test",
-        icon:"coffee-cup-3"
-    },
-    {
-        name:"Test",
-        icon:"coffee-cup-4"
-    },
-    {
-        name:"French press",
-        icon:"french-press"
-    },
-    {
-        name:"Test",
-        icon:"coffee-cup-6"
-    },
-    {
-        name:"Test",
-        icon:"coffee-cup-7"
-    },
-    {
-        name:"Test",
-        icon:"coffee-cup-8"
-    },
-    {
-        name:"Test",
-        icon:"tea-cup"
     },
 ]
 export default function ServicesSection() {
     return (
         <section className="full-section">
         <div className="section-cover b-2 match-content" />
-          <div className="large-section light-green" />
+          <div className="large-section darken" />
           <div className="section-content">
             <Container>
                 <Row>
@@ -87,6 +55,7 @@ export default function ServicesSection() {
                         <div className="section-divider" />
                     </Col>
                 </Row>
+
                 <Row>
                 {
                     services.map((service,key)=> {

@@ -126,6 +126,8 @@ nav.top-nav
         background-image: url('/static/img/2.jpg')
     &.b-3
         background-image: url('/static/img/3.jpg')
+    &.b-4
+        background-image: url('/static/img/4.jpg')
     &.match-content
         height: 100%
         width: 100%
@@ -147,6 +149,8 @@ nav.top-nav
         background: rgba(255, 205, 0, 0.2)
     &.light-green
         background: rgba(155, 255, 72, 0.2)
+    &.darken
+        background: rgba(18, 25, 13, 0.2)
 .full-section
     min-height: 100vh
     height: auto
@@ -250,7 +254,7 @@ nav.top-nav
                 opacity: 1
             &:after
                 transition: background 0.4s
-                background: rgba(255,255,255,0.5)
+                background: rgba(124, 102, 179, 0.44)
             &.dark:after
                 transition: background 0.4s
                 background: rgba(0,0,0,0.5)
@@ -280,27 +284,13 @@ nav.top-nav
 .service
     z-index: 1120
     position: relative
-    margin: 35px
+    margin: 60px 0px
     cursor: pointer
-    &:hover
-        &:before
-            transition: border-color 400ms
-            border: 2px solid rgba(255,255,255,0.7)
-    &:before
-        transition: border-color 400ms
-        content: ""
-        height: 150px
-        width: 150px
-        transform: rotate(45deg)
-        position: absolute
-        top: 0
-        bottom: 0
-        left: 0
-        right: 0
-        margin: 0 auto
-        border: 2px solid rgba(255,255,255,0.2)
     & .icon
-        color: white
+        color: black !important
+        background: white
+        padding: 10px
+        border-radius: 100%
         font-size: 3rem
         cursor: pointer
         border: 2px solid white
@@ -317,5 +307,89 @@ nav.top-nav
         flex-direction: column
     & p
         text-align: center
+        width: auto
+        background: white
+        border-radius: 1000px
         font-size: 1.4rem
-        color: rgba(0,0,0,0.7)
+        z-index: 1
+        color: rgb(76, 76, 76)
+.about-us-card
+    position: relative
+    z-index: 1120
+    width: 90%
+    margin: 0 auto
+    background-color: white
+    display: block
+    min-height: 300px
+    border-radius: 24px
+    padding: 16px
+    margin: 10px
+    text-align: center
+    color: rgb(76, 76, 76)
+    transition: background-color 400ms
+    cursor: pointer
+    &:hover 
+        &.yellow 
+            background-color: rgb(243, 222, 138)
+        &.aqua
+            background-color: #7fffd4
+        &.coral
+            background-color: #ff7f50
+        &.pink
+            background-color: #ffc0cb
+    & .avatar
+        width: 100px
+        height: 100px
+        border-radius: 100%
+        display: block
+        margin: 0 auto
+    & h2,p
+        border-radius: 100px
+    & p
+        display: inline-block
+        font-size: 1.3rem
+        padding: 5px 5px
+        color: white
+        background: black
+.bring-to-front
+    position: relative
+    z-index: 1120
+.styled-input
+    padding: 0px 20px
+    outline: unset
+    margin: 5px 0px
+    min-height: unset
+    background: white
+    display: inline
+    box-sizing: border-box
+    color: black
+    border-top: 0px
+    border-left: 0px
+    border-right: 0px
+    border-bottom: 1px dotted black
+.styled-textarea
+    width: 100%
+    padding: 10px 20px
+    border: unset
+    outline: unset
+    box-sizing: border-box
+    display: inline
+    margin: 5px 0px
+    border-top: 0px
+    border-left: 0px
+    border-right: 0px
+    border-bottom: 1px dotted black
+.send-button
+    margin: 0 auto
+    display: block
+    background: black
+    color: white
+.contact-holder
+    background: white
+    padding: 40px
+    border-radius: 32px
+.inline 
+    display: inline
+hr
+    background-color: #fff
+    border-top: 2px dashed #8c8b8b

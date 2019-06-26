@@ -8,9 +8,17 @@ Magico is a website design, the idea was a website about coffee shops in motels 
 
 `npm run dev`
 
+Visit `localhost:3000`
+
+### Export
+
+`npm run build`
+
+`npm run export`
+
 #### Demo
 
-soon
+<a href="https://neoxus.ir/demo/magico-react">Demo</a>
 
 ##### Magico is a part of http://neoxus.ir project
 
