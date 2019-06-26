@@ -18,28 +18,28 @@ export default function GallerySection() {
                 <Row>
                     <Col xs={12} md={4} lg={3} className="about-us-card-wrapper">
                         <div className="about-us-card aqua">
-                            <img className="avatar" src="/static/img/avatar3.jpg" />
+                            <img className="avatar" src="./static/img/avatar3.jpg" />
                             <h2>Jake William</h2>
                             <p>Owner</p>
                         </div>
                     </Col>
                     <Col xs={12} md={4} lg={3} className="about-us-card-wrapper">
                         <div className="about-us-card yellow">
-                            <img className="avatar" src="/static/img/avatar2.jpg" />
+                            <img className="avatar" src="./static/img/avatar2.jpg" />
                             <h2>Laylah Goodman</h2>
                             <p>Cashier</p>
                         </div>
                     </Col>
                     <Col xs={12} md={4} lg={3} className="about-us-card-wrapper">
                         <div className="about-us-card coral">
-                            <img className="avatar" src="/static/img/avatar1.jpg" />
+                            <img className="avatar" src="./static/img/avatar1.jpg" />
                             <h2>Darrel Fuller</h2>
                             <p>Head Barista</p>
                         </div>
                     </Col>
                     <Col xs={12} md={4} lg={3} className="about-us-card-wrapper">
                         <div className="about-us-card pink">
-                            <img className="avatar" src="/static/img/avatar4.jpg" />
+                            <img className="avatar" src="./static/img/avatar4.jpg" />
                             <h2>Karla Armstrong</h2>
                             <p>Barista</p>
                         </div>
