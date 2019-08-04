@@ -4,17 +4,21 @@ Magico is a website design, the idea was a website about coffee shops in motels 
 
 #### Run
 
-`npm install`
+```
+npm install
 
-`npm run dev`
+npm run dev
+```
 
 Visit `localhost:3000`
 
 ### Export
 
-`npm run build`
+```
+npm run build
 
-`npm run export`
+npm run export
+```
 
 #### Demo
 
